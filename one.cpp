@@ -22,9 +22,7 @@ int mainOne()
     struct sockaddr_in svr_addr, cli_addr;
     socklen_t sin_len = sizeof(cli_addr);
 
-    int sock = socket(AF_INET,
-
-                      SOCK_STREAM, 0);
+    int sock = socket(AF_INET,SOCK_STREAM, 0);
     if (sock < 0)
         err(1, "can't open socket");
 
